@@ -1,0 +1,49 @@
+.shop__sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 80px;
+  }
+  
+  hr {
+    color: rgba(153, 12, 143, 0.7);
+    height: 1px;
+  }
+  
+  .section-title {
+    background-color: #212529;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .price input[type="range"] {
+    background-color: rgba(153, 12, 143, 0.7);
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .review-stars .checked{
+    color: #f1c40f;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  
+  .review-star.unchecked {
+    color: black;
+  }
+  
+  .review-star:last-child {
+    margin-right: 0;
+  }
+  h4 {
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+.sidebar__filter{
+    margin-bottom: 40px;
+}

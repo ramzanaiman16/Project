@@ -1,0 +1,106 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+
+.register-form {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.logo-design{
+    background: radial-gradient(circle, rgba(153, 12, 143, 0.7) 10%, #000000 100%);
+}
+.register-form h1 {
+    margin: 15px;
+    /* margin-right: 80px; */
+    color: #333;
+    font-weight: bold;
+}
+
+.register-form input[type="name"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.selection-option{
+    /* width: calc(100% - 30px); */
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 190px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.register-form .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.register-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.register-form button[type="submit"] {
+    width: calc(100% - 30px);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eb7475;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button[type="submit"]:hover {
+    background-color: #d65e5f;
+}
+
+.register-form .message {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+/* Responsive Styles */
+@media (max-width: 440px) {
+    .register-form input[type="name"],
+    .register-form input[type="email"],
+    .register-form input[type="password"] {
+        width: 100%;
+    }
+}
+
+@media (min-width: 441px) and (max-width: 767px) {
+    .register-form {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .register-form {
+        max-width: 90%;
+    }
+}
+
+

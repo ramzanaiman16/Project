@@ -1,0 +1,103 @@
+/* users.css */
+
+.users-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.users-heading {
+  font-size: 30px;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  color: white;
+  width: 100%;
+  height: 80px;
+  background: radial-gradient(circle, rgba(153, 12, 143, 0.7) 10%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  transition: background-color 0.5s ease;
+}
+
+.loading-message {
+  font-size: 16px;
+  color: #888;
+}
+
+.users-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.user-role-admin {
+  background-color: #ffcccb;
+}
+
+.user-role-user {
+  background-color: #c8e6c9;
+}
+
+.user-id,
+.user-name,
+.user-email,
+.user-role {
+  margin: 0;
+  color: #333; /* Change text color */
+}
+
+.user-actions {
+  display: flex;
+  margin: 8px;
+}
+
+.edit-button,
+.delete-button,
+.details-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add styling for the exported button */
+.export-button {
+  background-color: #27ae60; /* Change to a nice green color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  margin-left: 650px;
+  margin-bottom: 20px;
+}
+
+.export-button:hover {
+  background-color: #218c56; 
+}
+
+.form-shadow{
+  width: 50%;
+  margin-left:400px;
+}

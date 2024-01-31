@@ -1,0 +1,101 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+   
+}
+.logo-design{
+    background: radial-gradient(circle, rgba(153, 12, 143, 0.7) 10%, #000000 100%);
+}
+
+.login-form .logo {
+    float: left;
+    margin-right: 10px;
+   
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login-form .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.login-form input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 15px;
+    
+}
+
+.login-form button[type="submit"] {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #eb7475;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-form .message {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+/* Existing styles */
+
+@media (max-width: 440px) {
+    .login-form {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        width: 100%; /* Full width for small screens */
+    }
+}
+
+@media (min-width: 441px) and (max-width: 767px) {
+    .login-form {
+        max-width: 80%; /* Adjust max-width for medium-sized screens */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .login-form {
+        max-width: 90%; 
+    }
+}
+
+
+

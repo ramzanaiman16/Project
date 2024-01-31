@@ -1,0 +1,30 @@
+/* privacy-policy.css */
+
+div{
+  display: block;
+  /* box-sizing: border-box; */
+}
+.container{
+ 
+  justify-content: center;
+}
+
+.privacy-policy {
+
+    padding: 20px;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 24px;
+  }
+  
+  .privacy-policy ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .privacy-policy li {
+    margin-bottom: 10px;
+    list-style-type :disc;
+  }

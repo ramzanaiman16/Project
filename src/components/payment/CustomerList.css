@@ -1,0 +1,40 @@
+/* frontend/src/components/CustomerList.css */
+.customer-list-container {
+    max-width: 800px;
+    margin: auto;
+}
+.customer-list-container h2{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    width: 100%;
+    height: 80px;
+    background: radial-gradient(circle, rgba(153, 12, 143, 0.7) 10%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transition: background-color 0.5s ease; 
+}
+
+.customer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.customer-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-info {
+    margin-bottom: 10px;
+}
+
+.customer-item strong {
+    color: #007bff;
+}

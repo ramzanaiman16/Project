@@ -1,0 +1,107 @@
+/* orderStyle.css */
+.order-container,
+.payment-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    margin: 0;
+}
+.order-history-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.order-history-heading {
+    font-size: 30px;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  color: white;
+  width: 100%;
+  height: 80px;
+  background: radial-gradient(circle, rgba(153, 12, 143, 0.7) 10%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  transition: background-color 0.5s ease;
+}
+
+.order-history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-history-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.order-details {
+    margin-bottom: 10px;
+}
+
+.order-items-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-item {
+    margin-bottom: 10px;
+}
+
+.order-item img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.order-total-price {
+    color: #27ae60;
+    font-size: 18px;
+}
+/* paymentHistoriesStyle.css */
+
+.payment-history-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.payment-history-heading {
+    font-size: 30px;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    color: white;
+    width: 100%;
+    height: 80px;
+    background: radial-gradient(circle, rgba(153, 12, 143, 0.7) 10%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    transition: background-color 0.5s ease;
+}
+
+.payment-history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment-history-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-info {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
