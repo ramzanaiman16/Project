@@ -6,9 +6,12 @@ export const register = async(data, header)=>{
     return await commonrequest("POST",`${BASE_URL}/register`,data, header);
 }
 
-export const login = async(data, header)=>{
-    return await commonrequest("POST",`${BASE_URL}/login`,data, header);
-}
+export const login = async (data, header) => {
+    return await commonrequest("POST", `${BASE_URL}/login`, data, {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    });
+  };
 
 
 export const editfunc = async(id,data,header)=>{
