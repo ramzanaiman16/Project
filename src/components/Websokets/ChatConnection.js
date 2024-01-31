@@ -4,8 +4,6 @@ import Chat from "./Chat";
 import "./chat.css";
 import Spiner from "../../components/Spiner/Spiner";
 
-const socket = io.connect("https://sttockery.netlify.app/.netlify/functions/App");
-
 function ChatConnection() {
   const [username, setUsername] = useState("");
   const [room, setRoom] = useState("");
@@ -13,7 +11,7 @@ function ChatConnection() {
   const [showspin, setShowSpin] = useState(true);
 
   const joinRoom = () => {
-    if (username !== "" && room !== "") {
+    if (username.trim() !== "" && room.trim() !== "") {
       socket.emit("join_room", room);
       setShowChat(true);
     }
@@ -24,6 +22,14 @@ function ChatConnection() {
       setShowSpin(false);
     }, 1200);
   }, []);
+
+  const socket = io.connect("https://sttockery.netlify.app/.netlify/functions/App");
+
+  useEffect(() => {
+    return () => {
+      socket.disconnect();
+    };
+  }, [socket]);
 
   return (
     <>
@@ -37,16 +43,12 @@ function ChatConnection() {
               <input
                 type="text"
                 placeholder="John..."
-                onChange={(event) => {
-                  setUsername(event.target.value);
-                }}
+                onChange={(event) => setUsername(event.target.value)}
               />
               <input
                 type="text"
                 placeholder="Room ID..."
-                onChange={(event) => {
-                  setRoom(event.target.value);
-                }}
+                onChange={(event) => setRoom(event.target.value)}
               />
               <button onClick={joinRoom}>Join A Room</button>
             </div>
