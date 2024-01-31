@@ -9,7 +9,7 @@ export const register = async(data, header)=>{
 export const login = async (data, header) => {
     return await commonrequest("POST", `${BASE_URL}/login`, data, {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": "https://ramzanaiman16.github.io",
     });
   };
 
